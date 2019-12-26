@@ -6,3 +6,11 @@ do
 echo `mkdir $RANDOM`
 done
 echo "all 1000 directory made!!!"
+cd test
+for x in `ls`
+do
+cd $x
+touch $RANDOM
+cd ..
+cd $x
+done
