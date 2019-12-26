@@ -1,4 +1,2 @@
 # randomfile
-this file help you to hidden your file
-but no mv file .file
-this softeware move yoor file in a lot of directory and file
+This program helps you hide your desired file, but not simply hide it. This program will hide your file between multiple directories and files
