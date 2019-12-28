@@ -3,7 +3,7 @@
 mkfile() {
 cd test
 cd $1
-for i in {1..101}
+for i in {1..1001}
 do
 touch $RANDOM.txt
 done
