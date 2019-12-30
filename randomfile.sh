@@ -26,3 +26,31 @@ mkfile "$x"
 cd ..
 cd $x
 done
+
+lr="Do you want to count your file: "
+read -p "$lr" py
+if [ $py == "Y" ] || [ $py == "y" ] || [ $py == "yes" ] || [ $py == "Yes" ]
+then 
+clear
+f=0
+text="Do you ned to count all file: "
+read -p "$text" ny
+if [ $ny == "Y" ] || [ $ny == "y" ] || [ $ny == "yes" ] || [ $ny == "Yes" ]
+then
+    for i in `ls -R`
+    do
+        echo "pouya is the best",$i
+        f=$((f+1))
+    done
+        echo $f
+else
+    for i in `ls`
+    do
+        echo "pouya is the best",$i
+        f=$((f+1))
+    done
+        echo $f
+fi
+else
+echo "All your file made"
+fi
