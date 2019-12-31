@@ -1,30 +1,32 @@
 #!/bin/bash
 
 mkfile() {
-cd test
-cd $1
-for i in {1..1001}
-do
-touch $RANDOM.txt
-done
-echo "all file made!!!"
-cd ..
+    cd test
+    cd $1
+    for i in {1..1001}
+    do
+        touch $RANDOM.txt
+    done
+        echo "all file made!!!"
+    cd ..
 }
 
 mkdir test
 cd test
 for i in {1..1001}
 do
-echo `mkdir $RANDOM`
+    echo `mkdir $RANDOM`
 done
+clear
 echo "all 1000 directory made!!!"
+sleep 3
 cd test
 for x in `ls`
 do
-cd $x
-mkfile "$x"
-cd ..
-cd $x
+    cd $x
+    mkfile "$x"
+    cd ..
+    cd $x
 done
 
 lr="Do you want to count your file: "
