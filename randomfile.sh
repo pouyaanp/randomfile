@@ -11,6 +11,8 @@ mkfile() {
     cd ..
 }
 
+text="Enter your file address: "
+read -p "$text" yn
 mkdir test
 cd test
 for i in {1..1001}
@@ -56,3 +58,14 @@ fi
 else
 echo "All your file made"
 fi
+
+for m in `find . -type d`
+do
+echo "hello"
+done
+
+a=$m
+mv $yn $a
+echo $m
+
+
